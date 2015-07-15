@@ -26,3 +26,15 @@ logo: logo.svg
 heroImg: hero-image.jpg
 avatar: pic.jpg
 blawblaw: <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+# Work section
+projects:
+- {name: Typo International, folder: 'proj-1'}
+- {name: Communication, folder: 'proj-2'}
+- {name: Typo International, folder: 'proj-3'}
+- {name: Communication, folder: 'proj-4'}
+- {name: Typo International, folder: 'proj-5'}
+- {name: Communication, folder: 'proj-6'}
+- {name: Typo International, folder: 'proj-7'}
+- {name: Communication, folder: 'proj-8'}
