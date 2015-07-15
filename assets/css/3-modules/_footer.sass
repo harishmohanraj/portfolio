@@ -1,0 +1,42 @@
+footer
+  background-image: url(/assets/images/#{$hero-path})
+  @extend %bg-pos
+  background-size: cover
+  overflow: hidden
+
+  .lockup
+    margin: 30px
+    +clearfix
+  .logo
+    +size(50px)
+    display: inline-block
+    float: left
+    margin: 10px 30px 0px 0px
+
+    path
+      fill: rgba(0,0,0,0.4)
+
+  .footer-content-wrap
+    display: inline-block
+    float: left
+    margin: 10px
+    nav
+      display: inline-block
+      ul
+        margin: 0px
+        padding: 0px
+        li
+          display: inline-block
+          list-style-type: none
+          margin-right: 20px
+          a
+            @extend %small-bold
+            color: rgba(0,0,0,0.5)
+            &:hover
+              color: rgba(0,0,0,0.7)
+
+    .copyright
+      margin: 0
+      text-transform: uppercase
+      font-size: 12px
+      color: rgba(0,0,0,0.4)

@@ -1,0 +1,15 @@
+<footer>
+  <div class="lockup">
+    <div class="logo">{%include icons/logo.html%}</div>
+    <div class="footer-content-wrap">
+      <nav>
+        <ul>
+          {% for item in site.data.portfolio.menu %}
+          <li class="menu-items"><a href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <p class="copyright">All content copyright 2015</p>
+    </div>
+  </div>
+</footer>

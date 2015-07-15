@@ -1,0 +1,51 @@
+header
+  background-image: url(/assets/images/#{$hero-path})
+  height: 750px
+  @extend %bg-pos
+  background-size: cover
+
+  .logo
+    +size(50px)
+    display: inline-block
+    float: left
+    margin: 30px
+
+    path
+      fill: rgba(0,0,0,0.7)
+  nav
+    display: inline-block
+    float: right
+    margin: 30px 40px 0px 0px
+
+    li
+      margin-left: 20px
+      display: inline-block
+      list-style-type: none
+      a
+        @extend %small-bold
+        color: rgba(0,0,0,0.7)
+        &:hover
+          color: rgba(0,0,0,1)
+  h1
+    font:
+      size: 72px
+      weight: 700
+    color: #fff
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 20px
+    clear: both
+    padding-top: 100px
+
+    span
+      display: inline-block
+      padding: 0.2em 0.5em
+      border: #fff solid 10px
+
+  .kicker
+    text-align: center
+    @extend %small-bold
+    letter-spacing: 0.05em
+    color: #fff
+    line-height: 1
