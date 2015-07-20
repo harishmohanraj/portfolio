@@ -469,9 +469,9 @@ section.alt-section {
       width: 200%;
       position: relative;
       left: 0%;
-      -webkit-transition: all 0.15s ease-out 0s;
-      -moz-transition: all 0.15s ease-out 0s;
-      transition: all 0.15s ease-out 0s; }
+      -webkit-transition: all 800ms;
+      -moz-transition: all 800ms;
+      transition: all 800ms; }
       section.alt-section.section-work .work-belt .thumb-wrap, section.alt-section.section-work .work-belt .work-wrap {
         width: 50%;
         float: left; }
@@ -569,13 +569,15 @@ section.alt-section {
         section.alt-section.section-work .work-belt .thumb-wrap .work-container, section.alt-section.section-work .work-belt .work-wrap .work-container {
           max-width: 600px;
           margin: 0 auto;
-          position: relative; }
+          position: relative;
+          display: none; }
           section.alt-section.section-work .work-belt .thumb-wrap .work-container h4, section.alt-section.section-work .work-belt .work-wrap .work-container h4 {
             color: #BD5248;
             font-weight: 300;
             text-transform: uppercase;
             font-size: 24px;
-            line-height: 1.2; }
+            line-height: 1.2;
+            margin: 0px 0px 20px; }
             @media (max-width: 740px) {
               section.alt-section.section-work .work-belt .thumb-wrap .work-container h4, section.alt-section.section-work .work-belt .work-wrap .work-container h4 {
                 margin-left: 60px; } }
