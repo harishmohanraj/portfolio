@@ -32,9 +32,9 @@ blawblaw: <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing a
 projects:
 - {name: Typo International, folder: 'proj-1'}
 - {name: Communication, folder: 'proj-2'}
-- {name: Typo International, folder: 'proj-3'}
-- {name: Communication, folder: 'proj-4'}
-- {name: Typo International, folder: 'proj-5'}
-- {name: Communication, folder: 'proj-6'}
-- {name: Typo International, folder: 'proj-7'}
-- {name: Communication, folder: 'proj-8'}
+- {name: Typo International-2, folder: 'proj-3'}
+- {name: Communication-2, folder: 'proj-4'}
+- {name: Typo International-3, folder: 'proj-5'}
+- {name: Communication-3, folder: 'proj-6'}
+- {name: Typo International-4, folder: 'proj-7'}
+- {name: Communication-4, folder: 'proj-8'}
