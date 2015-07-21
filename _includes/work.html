@@ -1,6 +1,5 @@
 <section class="alt-section section-work">
   <!-- <h3 id="work">Work</h3> -->
-  <i class="fa fa-camera-retro"></i> fa-camera-retro
   <div class="face-lockup">
     <div class="face-img"></div>
     <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
@@ -15,42 +14,96 @@
         <div class="column">
           {% for project in site.data.portfolio.projects1 %}
           {% if project.bg == 'true' %}
-            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
           {% elsif project.bg == 'false' %}
-            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
           {% endif %}
-              <div class="overlay">
-                <strong>{{ project.name }}</strong>
-                <div class="zoom-icon"></div>
-              </div>
+          {% if project.animation == 'slideTextRight' %}
+            <div><i class="fa {{project.animation-icon}} "></i></div>
+            <div>
+              <strong>{{ project.name }}</strong>
+              <div class="zoom-icon"></div>
+            </div>
+          {% elsif project.animation == 'glow' %}
+          <div style="background-color:{{project.color}}; color:{{project.hover-color}};"
+               onMouseOver="$(this).css({'background-color' : '{{project.hover-color}}', 'color' : '{{project.color}}'})"
+               onmouseout="$(this).css({'background-color' : '{{project.color}}', 'color' : '{{project.hover-color}}'})">
+            <p><i class="fa {{project.animation-icon}}"></i> <span>{{project.name}}</span> </p>
+          </div>
+          {% else %}
+            <div>
+              <strong>{{ project.name }}</strong>
+              <div class="zoom-icon"></div>
+            </div>
+            <div>
+              <strong>{{ project.name }}</strong>
+              <div class="zoom-icon"></div>
+            </div>
+          {% endif %}
             </a>
           {% endfor%}
         </div>
         <div class="column">
           {% for project in site.data.portfolio.projects2 %}
           {% if project.bg == 'true' %}
-            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
           {% elsif project.bg == 'false' %}
-            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
           {% endif %}
-              <div class="overlay">
-                <strong>{{ project.name }}</strong>
-                <div class="zoom-icon"></div>
-              </div>
+          {% if project.animation == 'slideTextRight' %}
+            <div><i class="fa {{project.animation-icon}} "></i></div>
+            <div>
+              <strong>{{ project.name }}</strong>
+              <div class="zoom-icon"></div>
+            </div>
+          {% elsif project.animation == 'glow' %}
+          <div style="background-color:{{project.color}}; color:{{project.hover-color}};"
+               onMouseOver="$(this).css({'background-color' : '{{project.hover-color}}', 'color' : '{{project.color}}'})"
+               onmouseout="$(this).css({'background-color' : '{{project.color}}', 'color' : '{{project.hover-color}}'})">
+            <p><i class="fa {{project.animation-icon}}"></i> <span>{{project.name}}</span> </p>
+          </div>
+          {% else %}
+            <div>
+              <strong>{{ project.name }}</strong>
+              <div class="zoom-icon"></div>
+            </div>
+            <div>
+              <strong>{{ project.name }}</strong>
+              <div class="zoom-icon"></div>
+            </div>
+          {% endif %}
             </a>
           {% endfor%}
         </div>
         <div class="column">
           {% for project in site.data.portfolio.projects3 %}
           {% if project.bg == 'true' %}
-            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
           {% elsif project.bg == 'false' %}
-            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
           {% endif %}
-              <div class="overlay">
-                <strong>{{ project.name }}</strong>
-                <div class="zoom-icon"></div>
-              </div>
+          {% if project.animation == 'slideTextRight' %}
+            <div><i class="fa {{project.animation-icon}} "></i></div>
+            <div>
+              <strong>{{ project.name }}</strong>
+              <div class="zoom-icon"></div>
+            </div>
+          {% elsif project.animation == 'glow' %}
+          <div style="background-color:{{project.color}}; color:{{project.hover-color}};"
+               onMouseOver="$(this).css({'background-color' : '{{project.hover-color}}', 'color' : '{{project.color}}'})"
+               onmouseout="$(this).css({'background-color' : '{{project.color}}', 'color' : '{{project.hover-color}}'})">
+            <p><i class="fa {{project.animation-icon}}"></i> <span>{{project.name}}</span> </p>
+          </div>
+          {% else %}
+            <div>
+              <strong>{{ project.name }}</strong>
+              <div class="zoom-icon"></div>
+            </div>
+            <div>
+              <strong>{{ project.name }}</strong>
+              <div class="zoom-icon"></div>
+            </div>
+          {% endif %}
             </a>
           {% endfor%}
         </div>

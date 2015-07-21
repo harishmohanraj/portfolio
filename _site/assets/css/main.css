@@ -2432,7 +2432,7 @@ section.alt-section.section-work {
             float: left;
             margin: 0 auto 1.7%;
             text-align: center;
-            padding-top: 40%;
+            padding-top: 45.5%;
             display: block;
             position: relative;
             overflow: hidden;
@@ -2441,7 +2441,7 @@ section.alt-section.section-work {
             perspective: 300; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.xtra-large, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.xtra-large {
               width: 100%;
-              height: 8.8em; }
+              height: 10em; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.large, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.large {
               width: 100%; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.small, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.small {
@@ -2449,16 +2449,30 @@ section.alt-section.section-work {
               margin-right: 2%; }
               section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.small.last, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.small.last {
                 margin-right: 0; }
-            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit .overlay, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit .overlay {
+            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.slideTextUp div:nth-child(2), section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.slideTextUp div:nth-child(2) {
+              top: 100%; }
+            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.slideTextRight div:first-child, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.slideTextRight div:first-child {
+              left: -100%;
+              font-size: 24px; }
+            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.slideTextLeft div:last-child, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.slideTextLeft div:last-child {
+              left: 100%;
+              font-size: 24px; }
+            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.glow, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.glow {
+              font-size: 50px; }
+              section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.glow p, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.glow p {
+                margin: 0; }
+            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit div, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit div {
               position: absolute;
-              top: -50%;
+              top: 0px;
               right: 0px;
+              bottom: 0px;
               left: 0px;
+              width: 100%;
               height: 100%;
-              background: rgba(189, 82, 72, 0.9);
-              -webkit-transition: 500ms;
-              -moz-transition: 500ms;
-              transition: 500ms;
+              text-align: center;
+              -webkit-transition: all 300ms;
+              -moz-transition: all 300ms;
+              transition: all 300ms;
               display: -webkit-box;
               display: -moz-box;
               display: box;
@@ -2483,41 +2497,25 @@ section.alt-section.section-work {
               -ms-justify-content: space-around;
               -o-justify-content: space-around;
               justify-content: space-around;
-              -ms-flex-pack: center;
-              text-align: center;
-              -webkit-transform: rotateX(90deg);
-              -moz-transform: rotateX(90deg);
-              -ms-transform: rotateX(90deg);
-              -o-transform: rotateX(90deg);
-              transform: rotateX(90deg);
-              -webkit-transform-origin: center bottom;
-              -moz-transform-origin: center bottom;
-              -ms-transform-origin: center bottom;
-              -o-transform-origin: center bottom;
-              transform-origin: center bottom;
-              opacity: 0; }
-              section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit .overlay .zoom-icon, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit .overlay .zoom-icon {
-                display: none; }
-              section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit .overlay strong, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit .overlay strong {
-                display: block;
-                padding: 0 20px;
-                color: white;
-                font-weight: 300;
-                text-transform: uppercase;
-                font-size: 24px;
-                line-height: 1.2; }
-            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit:hover .overlay, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit:hover .overlay {
-              position: absolute;
-              top: 0%;
-              right: 0px;
-              left: 0px;
-              cursor: pointer;
-              -webkit-transform: rotateX(0deg);
-              -moz-transform: rotateX(0deg);
-              -ms-transform: rotateX(0deg);
-              -o-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-              opacity: 1; }
+              -ms-flex-pack: center; }
+            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.slideTextUp:hover div, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.slideTextUp:hover div {
+              -webkit-transform: translateY(-100%);
+              -moz-transform: translateY(-100%);
+              -ms-transform: translateY(-100%);
+              -o-transform: translateY(-100%);
+              transform: translateY(-100%); }
+            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.slideTextRight:hover div, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.slideTextRight:hover div {
+              -webkit-transform: translateX(100%);
+              -moz-transform: translateX(100%);
+              -ms-transform: translateX(100%);
+              -o-transform: translateX(100%);
+              transform: translateX(100%); }
+            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.slideTextLeft:hover div, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.slideTextLeft:hover div {
+              -webkit-transform: translateX(-100%);
+              -moz-transform: translateX(-100%);
+              -ms-transform: translateX(-100%);
+              -o-transform: translateX(-100%);
+              transform: translateX(-100%); }
             @media screen and (max-width: 760px) {
               section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit {
                 width: 50%;
