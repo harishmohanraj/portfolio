@@ -6,10 +6,10 @@ $(function(){
 
 function workLoad(){
     //Instructing the broser for cache settings and cache it
-    $.ajaxSetup({cache: true});
+    $.ajaxSetup({cache: false});
     $('.thumb-unit').on('click',function(){
       var $this = $(this),
-          newTitle = $this.find('strong').text(),
+          newTitle = $this.find('div:first-child strong').text(),
           newContent = $this.data('folder'),
           spinner = '<div class="loader">Loading...</div>',
           newHTML = '/work/'+newContent+'.html';

@@ -150,14 +150,19 @@ section.alt-section
                       font-size: 4em
                       margin-top: .5em
                   .back
-                    background-color: #455962
-                    color: #ddd
+                    background-color: #ddd
+                    color: #455962
                     display: table-cell
                     vertical-align: middle
 
               &.rotate3dX
                 .back
                   +transform(rotateX( 180deg ))
+                  background-color: #455962
+                  color: #ddd
+                .front
+                  background-color: #ddd
+                  color: #455962
 
               &.rotate3dY
                 .back
@@ -231,7 +236,7 @@ section.alt-section
                 width: 50%
                 padding-top: 26%
         .work-container
-          max-width: 600px
+          max-width: 750px
           margin: 0 auto
           position: relative
           display: none
@@ -242,6 +247,10 @@ section.alt-section
             font-size: 24px
             line-height: 1.2
             margin: 0px 0px 20px
+
+          .project-load
+            color: #fff
+            font-size: 20px
 
             @media (max-width: 740px)
               margin-left: 60px

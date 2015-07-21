@@ -16,7 +16,7 @@
           {% if project.bg == 'true' %}
             <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
           {% elsif project.bg == 'false' %}
-            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background: {{project.color}};">
           {% endif %}
           {% if project.animation == 'slideTextRight' %}
             <div><i class="fa {{project.animation-icon}} "></i></div>
@@ -36,10 +36,10 @@
               <figcaption class="tile-caption caption-left">Slide-out Caption from left</figcaption>
             </figure>
           </div>
-          {% elsif project.animation == 'rotate3d' %}
+          {% elsif project.animation == 'rotate3dAnim' %}
           <div class="faces">
             <div class="front"><span class="fa {{project.animation-icon}}"></span></div>
-            <div class="back"><p>Launch Picassa</p></div>
+            <div class="back"><p>{{project.name}}</p></div>
           </div>
           {% else %}
             <div>
@@ -47,7 +47,7 @@
               <div class="zoom-icon"></div>
             </div>
             <div>
-              <strong>{{ project.name }}</strong>
+              <strong>{{ project.hoverName }}</strong>
               <div class="zoom-icon"></div>
             </div>
           {% endif %}
@@ -90,7 +90,7 @@
               <div class="zoom-icon"></div>
             </div>
             <div>
-              <strong>{{ project.name }}</strong>
+              <strong>{{ project.hoverName }}</strong>
               <div class="zoom-icon"></div>
             </div>
           {% endif %}
@@ -102,7 +102,7 @@
           {% if project.bg == 'true' %}
             <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
           {% elsif project.bg == 'false' %}
-            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background: {{project.color}};">
           {% endif %}
           {% if project.animation == 'slideTextRight' %}
             <div><i class="fa {{project.animation-icon}} "></i></div>
@@ -122,10 +122,10 @@
               <figcaption class="tile-caption caption-left">Slide-out Caption from left</figcaption>
             </figure>
           </div>
-          {% elsif project.animation == 'rotate3d' %}
+          {% elsif project.animation == 'rotate3dAnim' %}
           <div class="faces">
             <div class="front"><span class="fa {{project.animation-icon}}"></span></div>
-            <div class="back"><p>Launch Picassa</p></div>
+            <div class="back"><p>{{project.name}}</p></div>
           </div>
           {% else %}
             <div>
@@ -133,7 +133,7 @@
               <div class="zoom-icon"></div>
             </div>
             <div>
-              <strong>{{ project.name }}</strong>
+              <strong>{{ project.hoverName }}</strong>
               <div class="zoom-icon"></div>
             </div>
           {% endif %}
@@ -148,7 +148,7 @@
         <div class="work-return">
           {% include icons/icon-back.html %}
         </div>
-        <h4 class="project-title">Thumb 1</h4>
+        <h4 class="project-title"></h4>
         <div class="project-load">
 
         </div>

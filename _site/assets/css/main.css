@@ -2526,8 +2526,8 @@ section.alt-section.section-work {
                     font-size: 4em;
                     margin-top: 0.5em; }
                 section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.rotate3d .faces .back, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.rotate3d .faces .back {
-                  background-color: #455962;
-                  color: #ddd;
+                  background-color: #ddd;
+                  color: #455962;
                   display: table-cell;
                   vertical-align: middle; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.rotate3dX .back, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.rotate3dX .back {
@@ -2535,7 +2535,12 @@ section.alt-section.section-work {
               -moz-transform: rotateX(180deg);
               -ms-transform: rotateX(180deg);
               -o-transform: rotateX(180deg);
-              transform: rotateX(180deg); }
+              transform: rotateX(180deg);
+              background-color: #455962;
+              color: #ddd; }
+            section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.rotate3dX .front, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.rotate3dX .front {
+              background-color: #ddd;
+              color: #455962; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.rotate3dY .back, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.rotate3dY .back {
               -webkit-transform: rotateY(180deg);
               -moz-transform: rotateY(180deg);
@@ -2632,7 +2637,7 @@ section.alt-section.section-work {
                 width: 50%;
                 padding-top: 26%; } }
       section.alt-section.section-work .work-belt .thumb-wrap .work-container, section.alt-section.section-work .work-belt .work-wrap .work-container {
-        max-width: 600px;
+        max-width: 750px;
         margin: 0 auto;
         position: relative;
         display: none; }
@@ -2643,8 +2648,11 @@ section.alt-section.section-work {
           font-size: 24px;
           line-height: 1.2;
           margin: 0px 0px 20px; }
+        section.alt-section.section-work .work-belt .thumb-wrap .work-container .project-load, section.alt-section.section-work .work-belt .work-wrap .work-container .project-load {
+          color: #fff;
+          font-size: 20px; }
           @media (max-width: 740px) {
-            section.alt-section.section-work .work-belt .thumb-wrap .work-container h4, section.alt-section.section-work .work-belt .work-wrap .work-container h4 {
+            section.alt-section.section-work .work-belt .thumb-wrap .work-container .project-load, section.alt-section.section-work .work-belt .work-wrap .work-container .project-load {
               margin-left: 60px; } }
         section.alt-section.section-work .work-belt .thumb-wrap .work-container img, section.alt-section.section-work .work-belt .work-wrap .work-container img {
           max-width: 100%;
