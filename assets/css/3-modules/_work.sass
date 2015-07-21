@@ -1,7 +1,38 @@
 section.alt-section
-  background-color: black
   &.section-work
+    background-image: url(/assets/images/#{$second-hero})
+    @extend %bg-pos
+    background-size: cover
     overflow-x: hidden
+    .face-lockup
+      +display(flex)
+      +align-items(center)
+      +justify-content(space-between)
+      margin: 50px auto
+      max-width: 780px
+
+      .face-img
+        background-image: url(../images/#{$avatar-path})
+        +size(200px)
+        border-radius: 50%
+        +order(3)
+
+      [class^="icon"]
+        +size(100px)
+        background-color: $bg-color-new
+        border-radius: 50%
+        path
+          fill: $skills-icon-color
+
+        &.icon-pencil
+          +order(1)
+        &.icon-mouse
+          +order(2)
+        &.icon-browser
+          +order(4)
+        &.icon-video
+          +order(5)
+
     .work-belt
       width: 200%
       position: relative

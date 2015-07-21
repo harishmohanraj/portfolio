@@ -1,10 +1,19 @@
 <section class="alt-section section-work">
-  <h3 id="work">Work</h3>
+  <!-- <h3 id="work">Work</h3> -->
+  <div class="face-lockup">
+    <div class="face-img"></div>
+    <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
+    <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
+    <div class="icon-browser">{% include icons/icon-browser.html %}</div>
+    <div class="icon-video">{% include icons/icon-video.html %}</div>
+  </div>
+
   <div class="work-belt">
     <div class="thumb-wrap">
       <div class="thumb-container">
         {% for project in site.data.portfolio.projects %}
-          <a class="thumb-unit" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
+          <!-- <a class="thumb-unit" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);"> -->
+          <a class="thumb-unit" data-folder = "{{project.folder}}">
             <div class="overlay">
               <strong>{{ project.name }}</strong>
               <div class="zoom-icon"></div>
