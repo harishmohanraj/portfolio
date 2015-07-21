@@ -1,5 +1,6 @@
 <section class="alt-section section-work">
   <!-- <h3 id="work">Work</h3> -->
+  <i class="fa fa-camera-retro"></i> fa-camera-retro
   <div class="face-lockup">
     <div class="face-img"></div>
     <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
@@ -11,15 +12,49 @@
   <div class="work-belt">
     <div class="thumb-wrap">
       <div class="thumb-container">
-        {% for project in site.data.portfolio.projects %}
-          <!-- <a class="thumb-unit" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);"> -->
-          <a class="thumb-unit" data-folder = "{{project.folder}}">
-            <div class="overlay">
-              <strong>{{ project.name }}</strong>
-              <div class="zoom-icon"></div>
-            </div>
-          </a>
-        {% endfor%}
+        <div class="column">
+          {% for project in site.data.portfolio.projects1 %}
+          {% if project.bg == 'true' %}
+            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
+          {% elsif project.bg == 'false' %}
+            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
+          {% endif %}
+              <div class="overlay">
+                <strong>{{ project.name }}</strong>
+                <div class="zoom-icon"></div>
+              </div>
+            </a>
+          {% endfor%}
+        </div>
+        <div class="column">
+          {% for project in site.data.portfolio.projects2 %}
+          {% if project.bg == 'true' %}
+            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
+          {% elsif project.bg == 'false' %}
+            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
+          {% endif %}
+              <div class="overlay">
+                <strong>{{ project.name }}</strong>
+                <div class="zoom-icon"></div>
+              </div>
+            </a>
+          {% endfor%}
+        </div>
+        <div class="column">
+          {% for project in site.data.portfolio.projects3 %}
+          {% if project.bg == 'true' %}
+            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
+          {% elsif project.bg == 'false' %}
+            <a class="thumb-unit {{project.class}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
+          {% endif %}
+              <div class="overlay">
+                <strong>{{ project.name }}</strong>
+                <div class="zoom-icon"></div>
+              </div>
+            </a>
+          {% endfor%}
+        </div>
+
       </div>
     </div>
     <div class="work-wrap">

@@ -30,12 +30,21 @@ blawblaw: <p>I am a <strong>creative problem-solver</strong>  with 4+ years expe
 
 
 # Work section
-projects:
-- {name: Typo International, folder: 'proj-1'}
-- {name: Communication, folder: 'proj-2'}
-- {name: Typo International-2, folder: 'proj-3'}
-- {name: Communication-2, folder: 'proj-4'}
-- {name: Typo International-3, folder: 'proj-5'}
-- {name: Communication-3, folder: 'proj-6'}
-- {name: Typo International-4, folder: 'proj-7'}
-- {name: Communication-4, folder: 'proj-8'}
+projects1:
+- {name: Typo International-3, folder: 'proj-5', color: '#56D9C9', class: 'large', bg: 'false'}
+- {name: Communication-3, folder: 'proj-6', color: '#455962', class: 'small', bg: 'false'}
+- {name: Typo International-4, folder: 'proj-7', color: '#ddd', class: 'small last', bg: 'false'}
+- {name: Communication-4, folder: 'proj-3', color: '#F0514A', class: 'large', bg: 'true'}
+
+# Work section
+projects2:
+- {name: Typo International, folder: 'proj-1', color: '#FCC120', class: 'large', bg: 'false'}
+- {name: Communication, folder: 'proj-2', color: '#3EC7F3', class: 'large', bg: 'false'}
+- {name: Typo International-2, folder: 'proj-3', color: '#455962', class: 'small', bg: 'false'}
+- {name: Communication-2, folder: 'proj-4', color: '#ddd', class: 'small last', bg: 'false'}
+
+
+# Work section
+projects3:
+- {name: Typo International, folder: 'proj-4', color: '#56D9C9', class: 'xtra-large', bg: 'true'}
+- {name: Communication-4, folder: 'proj-8', color: '#F0514A', class: 'large', bg: 'false'}
