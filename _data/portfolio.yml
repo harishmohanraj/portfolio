@@ -31,20 +31,20 @@ blawblaw: <p>I am a <strong>creative problem-solver</strong>  with 4+ years expe
 
 # Work section
 projects1:
-- {name: Typo International-3, folder: 'proj-5', color: '#56D9C9', class: 'large', bg: 'false', animation: 'slideTextUp', animation-icon: ''}
-- {name: Communication-3, folder: 'proj-6', color: '#455962', class: 'small', bg: 'false', animation: 'slideTextRight', animation-icon: 'fa-arrow-circle-right'}
-- {name: '', folder: 'proj-7', color: '#F0514A', class: 'small last', bg: 'false', animation: 'glow', animation-icon: 'fa-linkedin-square', hover-color: '#fff'}
-- {name: Communication-4, folder: 'proj-3', color: '#F0514A', class: 'large', bg: 'true', animation: 'slideTextUp', animation-icon: ''}
+- {name: About Me, folder: 'proj-5', color: '#56D9C9', class: 'large', bg: 'false', animation: 'slideTextUp', animation-icon: ''}
+- {name: Educational background, folder: 'proj-6', color: '#455962', class: 'small-box', bg: 'false', animation: 'slideTextRight', animation-icon: 'fa-arrow-circle-right'}
+- {name: '', folder: 'proj-7', color: '#F0514A', class: 'small-box last', bg: 'false', animation: 'glow', animation-icon: 'fa-linkedin-square', hover-color: '#fff'}
+- {name: Work , folder: 'proj-3', color: '#F0514A', class: 'large', bg: 'true', animation: 'figTile', animation-icon: ''}
 
 # Work section
 projects2:
 - {name: Skills, folder: 'proj-1', color: '#FCC120', class: 'large', bg: 'false', animation: 'glow', animation-icon: 'fa-hand-o-right', hover-color: '#fff'}
 - {name: Hobbies, folder: 'proj-2', color: '#3EC7F3', class: 'large', bg: 'false', animation: 'slideTextLeft', animation-icon: ''}
-- {name: Typo International-2, folder: 'proj-3', color: '#455962', class: 'small', bg: 'false', animation: 'slideTextUp', animation-icon: 'fa-instagram'}
-- {name: Communication-2, folder: 'proj-4', color: '#ddd', class: 'small last', bg: 'false', animation: 'slideTextUp', animation-icon: 'fa-twitter'}
+- {name: Click, folder: 'proj-3', color: 'transparent', class: 'small-box rotate3d rotate3dX', bg: 'false', animation: 'rotate3dAnim', animation-icon: 'fa-instagram'}
+- {name: Share, folder: 'proj-4', color: 'transparent', class: 'small-box last rotate3d rotate3dY', bg: 'false', animation: 'rotate3dAnim', animation-icon: 'fa-twitter'}
 
 
 # Work section
 projects3:
-- {name: Typo International, folder: 'proj-4', color: '#56D9C9', class: 'xtra-large', bg: 'true', animation: 'slideTextUp', animation-icon: ''}
+- {name: Typo International, folder: 'proj-4', color: '#56D9C9', class: 'xtra-large', bg: 'true', animation: 'awesome', animation-icon: ''}
 - {name: Resume, folder: 'proj-8', color: '#F0514A', class: 'large', bg: 'false', animation: 'glow', animation-icon: 'fa-download', hover-color: '#fff'}

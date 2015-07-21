@@ -30,6 +30,17 @@
                onmouseout="$(this).css({'background-color' : '{{project.color}}', 'color' : '{{project.hover-color}}'})">
             <p><i class="fa {{project.animation-icon}}"></i> <span>{{project.name}}</span> </p>
           </div>
+          {% elsif project.animation == 'figTile' %}
+          <div>
+            <figure>
+              <figcaption class="tile-caption caption-left">Slide-out Caption from left</figcaption>
+            </figure>
+          </div>
+          {% elsif project.animation == 'rotate3d' %}
+          <div class="faces">
+            <div class="front"><span class="fa {{project.animation-icon}}"></span></div>
+            <div class="back"><p>Launch Picassa</p></div>
+          </div>
           {% else %}
             <div>
               <strong>{{ project.name }}</strong>
@@ -48,7 +59,7 @@
           {% if project.bg == 'true' %}
             <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
           {% elsif project.bg == 'false' %}
-            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-color: {{project.color}};">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background: {{project.color}};">
           {% endif %}
           {% if project.animation == 'slideTextRight' %}
             <div><i class="fa {{project.animation-icon}} "></i></div>
@@ -61,6 +72,17 @@
                onMouseOver="$(this).css({'background-color' : '{{project.hover-color}}', 'color' : '{{project.color}}'})"
                onmouseout="$(this).css({'background-color' : '{{project.color}}', 'color' : '{{project.hover-color}}'})">
             <p><i class="fa {{project.animation-icon}}"></i> <span>{{project.name}}</span> </p>
+          </div>
+          {% elsif project.animation == 'figTile' %}
+          <div>
+            <figure>
+              <figcaption class="tile-caption caption-left">Slide-out Caption from left</figcaption>
+            </figure>
+          </div>
+          {% elsif project.animation == 'rotate3dAnim' %}
+          <div class="faces">
+            <div class="front"><span class="fa {{project.animation-icon}}"></span></div>
+            <div class="back"><p>{{project.name}}</p></div>
           </div>
           {% else %}
             <div>
@@ -93,6 +115,17 @@
                onMouseOver="$(this).css({'background-color' : '{{project.hover-color}}', 'color' : '{{project.color}}'})"
                onmouseout="$(this).css({'background-color' : '{{project.color}}', 'color' : '{{project.hover-color}}'})">
             <p><i class="fa {{project.animation-icon}}"></i> <span>{{project.name}}</span> </p>
+          </div>
+          {% elsif project.animation == 'figTile' %}
+          <div>
+            <figure>
+              <figcaption class="tile-caption caption-left">Slide-out Caption from left</figcaption>
+            </figure>
+          </div>
+          {% elsif project.animation == 'rotate3d' %}
+          <div class="faces">
+            <div class="front"><span class="fa {{project.animation-icon}}"></span></div>
+            <div class="back"><p>Launch Picassa</p></div>
           </div>
           {% else %}
             <div>
