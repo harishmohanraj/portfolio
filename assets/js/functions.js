@@ -9,7 +9,7 @@ function workLoad(){
     $.ajaxSetup({cache: false});
     $('.thumb-unit').on('click',function(){
       var $this = $(this),
-          newTitle = $this.find('div:first-child strong').text(),
+          newTitle = $this.find('strong:first-of-type').text(),
           newContent = $this.data('folder'),
           spinner = '<div class="loader">Loading...</div>',
           newHTML = '/work/'+newContent+'.html';

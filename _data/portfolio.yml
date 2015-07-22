@@ -34,7 +34,7 @@ projects1:
 - {name: About Me,hoverName: 'Click to explore more', folder: 'proj-1', color: '#56D9C9', class: 'large', bg: 'false', animation: 'slideTextUp', animation-icon: ''}
 - {name: Educational background,hoverName: 'Click to explore more', folder: 'proj-2', color: '#455962', class: 'small-box', bg: 'false', animation: 'slideTextRight', animation-icon: 'fa-arrow-circle-right'}
 - {name: '', folder: 'proj-3', color: '#F0514A', class: 'small-box last', bg: 'false', animation: 'glow', animation-icon: 'fa-linkedin-square', hover-color: '#fff'}
-- {name: Work ,hoverName: 'Click to explore more', folder: 'proj-4', color: '#F0514A', class: 'large', bg: 'true', animation: 'figTile', animation-icon: ''}
+- {name: Work Experience ,hoverName: 'Click to explore more', folder: 'proj-4', color: '#F0514A', class: 'large', bg: 'true', animation: 'figTile', animation-icon: ''}
 
 # Work section
 projects2:
@@ -46,5 +46,5 @@ projects2:
 
 # Work section
 projects3:
-- {name: Typo International,hoverName: 'Click to explore more', folder: 'proj-9', color: '#56D9C9', class: 'xtra-large', bg: 'true', animation: 'awesome', animation-icon: ''}
+- {name: '',hoverName: 'Personal Information', folder: 'proj-9', color: '#56D9C9', class: 'xtra-large', bg: 'true', animation: 'awesome', animation-icon: ''}
 - {name: Resume,hoverName: 'Click to explore more', folder: 'proj-10', color: '#F0514A', class: 'large', bg: 'false', animation: 'glow', animation-icon: 'fa-download', hover-color: '#fff'}

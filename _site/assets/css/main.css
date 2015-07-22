@@ -2071,7 +2071,7 @@ h3 {
   padding: 100px 0px 30px;
   text-align: center; }
 
-h3, header nav li a, header .kicker, footer .footer-content-wrap nav ul li a {
+h3, body header nav li a, body header .kicker, footer .footer-content-wrap nav ul li a {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase; }
@@ -2079,64 +2079,69 @@ h3, header nav li a, header .kicker, footer .footer-content-wrap nav ul li a {
 section.about .skill-lockup .skill-icon.skill-1 span:nth-child(n+2), section.about .skill-lockup .skill-icon.skill-2 span:nth-child(n+3), section.about .skill-lockup .skill-icon.skill-3 span:nth-child(n+4), section.about .skill-lockup .skill-icon.skill-4 span:nth-child(n+5), section.about .skill-lockup .skill-icon.skill-5 span:nth-child(n+6), section.about .skill-lockup .skill-icon.skill-6 span:nth-child(n+7), section.about .skill-lockup .skill-icon.skill-7 span:nth-child(n+8), section.about .skill-lockup .skill-icon.skill-8 span:nth-child(n+9), section.about .skill-lockup .skill-icon.skill-9 span:nth-child(n+10), section.about .skill-lockup .skill-icon.skill-10 span:nth-child(n+11) {
   background: #F6F6F8; }
 
-header, footer, section.alt-section.section-work, section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit {
+body header, footer, section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
 
-header {
-  background-image: url(/assets/images/hero-image.jpg);
-  height: 750px;
-  background-size: cover; }
-  header .logo {
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    float: left;
-    margin: 30px; }
-    header .logo path {
-      fill: rgba(0, 0, 0, 0.7); }
-  header nav {
-    display: inline-block;
-    float: right;
-    margin: 30px 40px 0px 0px; }
-    header nav li {
-      margin-left: 20px;
+body {
+  background-color: #000;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+  body header {
+    background-image: url(/assets/images/hero-image.jpg);
+    height: 750px;
+    background-size: cover; }
+    body header .logo {
+      height: 50px;
+      width: 50px;
       display: inline-block;
-      list-style-type: none; }
-      header nav li a {
-        color: rgba(0, 0, 0, 0.7); }
-        header nav li a:hover {
-          color: black; }
-  header h1 {
-    font-size: 72px;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 20px;
-    clear: both;
-    padding-top: 100px; }
-    header h1 span {
+      float: left;
+      margin: 30px; }
+      body header .logo path {
+        fill: rgba(0, 0, 0, 0.7); }
+    body header nav {
       display: inline-block;
-      padding: 0.2em 0.5em;
-      border: #fff solid 10px; }
-  header .kicker {
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #fff;
-    line-height: 1; }
-  header .scroll-arrow {
-    text-align: center; }
-    header .scroll-arrow span {
-      display: inline-block;
-      height: 100px;
-      width: 100px;
-      margin-top: 200px;
-      transform: rotate(90deg); }
-      header .scroll-arrow span path {
-        fill: white; }
+      float: right;
+      margin: 30px 40px 0px 0px; }
+      body header nav li {
+        margin-left: 20px;
+        display: inline-block;
+        list-style-type: none; }
+        body header nav li a {
+          color: rgba(0, 0, 0, 0.7); }
+          body header nav li a:hover {
+            color: black; }
+    body header h1 {
+      font-size: 72px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+      clear: both;
+      padding-top: 180px;
+      margin-top: 0px; }
+      body header h1 span {
+        display: inline-block;
+        padding: 0.2em 0.5em;
+        border: #fff solid 10px; }
+    body header .kicker {
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: #fff;
+      line-height: 1; }
+    body header .scroll-arrow {
+      text-align: center; }
+      body header .scroll-arrow span {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        margin-top: 200px;
+        transform: rotate(90deg); }
+        body header .scroll-arrow span path {
+          fill: white; }
 
 footer {
   background-size: cover;
@@ -2179,7 +2184,7 @@ footer {
       color: rgba(0, 0, 0, 0.4); }
 
 section.about {
-  background-color: #F6F6F8; }
+  background-color: #F0EEEF; }
   section.about .face-lockup {
     display: -webkit-box;
     display: -moz-box;
@@ -2318,8 +2323,7 @@ section.about {
       width: 270px; } }
 
 section.alt-section.section-work {
-  background-image: url(/assets/images/second-hero.jpg);
-  background-size: cover;
+  background-color: #1D1D1D;
   overflow-x: hidden; }
   section.alt-section.section-work .face-lockup {
     display: -webkit-box;
@@ -2347,7 +2351,7 @@ section.alt-section.section-work {
     -o-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-pack: justify;
-    margin: 50px auto;
+    margin: 30px auto;
     max-width: 780px; }
     section.alt-section.section-work .face-lockup .face-img {
       background-image: url(../images/pic.jpg);
@@ -2411,7 +2415,7 @@ section.alt-section.section-work {
       width: 50%;
       float: left; }
       section.alt-section.section-work .work-belt .thumb-wrap .thumb-container, section.alt-section.section-work .work-belt .work-wrap .thumb-container {
-        max-width: 960px;
+        max-width: 1000px;
         padding: 1em;
         margin: 0 auto;
         padding-bottom: 100px; }
@@ -2420,7 +2424,7 @@ section.alt-section.section-work {
           display: table;
           clear: both; }
         section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column {
-          width: 31%;
+          width: 32.8%;
           float: left;
           color: #fff;
           margin-right: 0.5%; }
@@ -2444,7 +2448,8 @@ section.alt-section.section-work {
             perspective: 300; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.xtra-large, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.xtra-large {
               width: 100%;
-              height: 10em; }
+              height: 3.85em;
+              font-size: 40px; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.large, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.large {
               width: 100%; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.small-box, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.small-box {
@@ -2454,18 +2459,28 @@ section.alt-section.section-work {
                 margin-right: 0; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.awesome div:nth-child(2), section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.awesome div:nth-child(2) {
               position: absolute;
-              top: -50%;
+              top: 0%;
               right: 0px;
               left: 0px;
               cursor: pointer;
-              -webkit-transform: rotateX(0deg);
-              -moz-transform: rotateX(0deg);
-              -ms-transform: rotateX(0deg);
-              -o-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-              opacity: 0; }
+              -webkit-transition: 300ms;
+              -moz-transition: 300ms;
+              transition: 300ms;
+              -webkit-transform: rotateX(90deg);
+              -moz-transform: rotateX(90deg);
+              -ms-transform: rotateX(90deg);
+              -o-transform: rotateX(90deg);
+              transform: rotateX(90deg);
+              -webkit-transform-origin: center bottom;
+              -moz-transform-origin: center bottom;
+              -ms-transform-origin: center bottom;
+              -o-transform-origin: center bottom;
+              transform-origin: center bottom;
+              opacity: 0;
+              background-color: rgba(0, 0, 0, 0.7); }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.slideTextUp div:nth-child(2), section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.slideTextUp div:nth-child(2) {
-              top: 100%; }
+              top: 100%;
+              font-size: 24px; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.slideTextRight div:first-child, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.slideTextRight div:first-child {
               left: -100%;
               font-size: 24px; }
@@ -2489,7 +2504,7 @@ section.alt-section.section-work {
                   bottom: 0;
                   font-size: 24px;
                   z-index: 1;
-                  background-color: rgba(0, 0, 0, 0.5);
+                  background-color: rgba(0, 0, 0, 0.7);
                   text-align: left;
                   padding: 1em; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.rotate3d, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.rotate3d {
@@ -2584,11 +2599,10 @@ section.alt-section.section-work {
               -o-justify-content: space-around;
               justify-content: space-around;
               -ms-flex-pack: center; }
+              section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit > div.back, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit > div.back {
+                font-size: 24px; }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.awesome:hover div, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.awesome:hover div {
-              position: absolute;
               top: 0%;
-              right: 0px;
-              left: 0px;
               cursor: pointer;
               -webkit-transform: rotateX(0deg);
               -moz-transform: rotateX(0deg);
@@ -2615,11 +2629,11 @@ section.alt-section.section-work {
               -o-transform: translateX(-100%);
               transform: translateX(-100%); }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.figTile:hover div, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.figTile:hover div {
-              -webkit-transform: translateX(100%);
-              -moz-transform: translateX(100%);
-              -ms-transform: translateX(100%);
-              -o-transform: translateX(100%);
-              transform: translateX(100%); }
+              -webkit-transform: translateX(90%);
+              -moz-transform: translateX(90%);
+              -ms-transform: translateX(90%);
+              -o-transform: translateX(90%);
+              transform: translateX(90%); }
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit.rotate3dX:hover .faces, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit.rotate3dX:hover .faces {
               -webkit-transform: rotateX(180deg);
               -moz-transform: rotateX(180deg);
@@ -2643,14 +2657,17 @@ section.alt-section.section-work {
         display: none; }
         section.alt-section.section-work .work-belt .thumb-wrap .work-container h4, section.alt-section.section-work .work-belt .work-wrap .work-container h4 {
           color: #BD5248;
-          font-weight: 300;
+          font-weight: 700;
           text-transform: uppercase;
-          font-size: 24px;
+          font-size: 40px;
           line-height: 1.2;
           margin: 0px 0px 20px; }
         section.alt-section.section-work .work-belt .thumb-wrap .work-container .project-load, section.alt-section.section-work .work-belt .work-wrap .work-container .project-load {
           color: #fff;
-          font-size: 20px; }
+          font-size: 20px;
+          margin-bottom: 50px; }
+          section.alt-section.section-work .work-belt .thumb-wrap .work-container .project-load strong, section.alt-section.section-work .work-belt .work-wrap .work-container .project-load strong {
+            color: #21ADDD; }
           @media (max-width: 740px) {
             section.alt-section.section-work .work-belt .thumb-wrap .work-container .project-load, section.alt-section.section-work .work-belt .work-wrap .work-container .project-load {
               margin-left: 60px; } }
@@ -2663,7 +2680,7 @@ section.alt-section.section-work {
           cursor: pointer;
           opacity: 0.5;
           position: absolute;
-          top: -4px;
+          top: 4px;
           left: -60px; }
           section.alt-section.section-work .work-belt .thumb-wrap .work-container .work-return svg, section.alt-section.section-work .work-belt .work-wrap .work-container .work-return svg {
             width: 100%;

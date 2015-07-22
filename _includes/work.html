@@ -28,18 +28,26 @@
           <div style="background-color:{{project.color}}; color:{{project.hover-color}};"
                onMouseOver="$(this).css({'background-color' : '{{project.hover-color}}', 'color' : '{{project.color}}'})"
                onmouseout="$(this).css({'background-color' : '{{project.color}}', 'color' : '{{project.hover-color}}'})">
-            <p><i class="fa {{project.animation-icon}}"></i> <span>{{project.name}}</span> </p>
+            <p><i class="fa {{project.animation-icon}}"></i> <strong>{{project.name}}</strong> </p>
           </div>
           {% elsif project.animation == 'figTile' %}
           <div>
             <figure>
-              <figcaption class="tile-caption caption-left">Slide-out Caption from left</figcaption>
+              <figcaption class="tile-caption caption-left"><strong>{{project.name}}</strong></figcaption>
             </figure>
           </div>
           {% elsif project.animation == 'rotate3dAnim' %}
           <div class="faces">
             <div class="front"><span class="fa {{project.animation-icon}}"></span></div>
-            <div class="back"><p>{{project.name}}</p></div>
+            <div class="back"><p><strong>{{project.name}}</strong></p></div>
+          </div>
+          {% elsif project.animation == 'awesome' %}
+          <div>
+            <div class="zoom-icon"></div>
+          </div>
+          <div>
+            <strong>{{ project.hoverName }}</strong>
+            <div class="zoom-icon"></div>
           </div>
           {% else %}
             <div>
@@ -47,7 +55,7 @@
               <div class="zoom-icon"></div>
             </div>
             <div>
-              <strong>{{ project.hoverName }}</strong>
+              <span>{{ project.hoverName }}</span>
               <div class="zoom-icon"></div>
             </div>
           {% endif %}
@@ -71,18 +79,26 @@
           <div style="background-color:{{project.color}}; color:{{project.hover-color}};"
                onMouseOver="$(this).css({'background-color' : '{{project.hover-color}}', 'color' : '{{project.color}}'})"
                onmouseout="$(this).css({'background-color' : '{{project.color}}', 'color' : '{{project.hover-color}}'})">
-            <p><i class="fa {{project.animation-icon}}"></i> <span>{{project.name}}</span> </p>
+            <p><i class="fa {{project.animation-icon}}"></i> <strong>{{project.name}}</strong> </p>
           </div>
           {% elsif project.animation == 'figTile' %}
           <div>
             <figure>
-              <figcaption class="tile-caption caption-left">Slide-out Caption from left</figcaption>
+              <figcaption class="tile-caption caption-left"><strong>{{project.name}}</strong></figcaption>
             </figure>
           </div>
           {% elsif project.animation == 'rotate3dAnim' %}
           <div class="faces">
             <div class="front"><span class="fa {{project.animation-icon}}"></span></div>
-            <div class="back"><p>{{project.name}}</p></div>
+            <div class="back"><p><strong>{{project.name}}</strong></p></div>
+          </div>
+          {% elsif project.animation == 'awesome' %}
+          <div>
+            <div class="zoom-icon"></div>
+          </div>
+          <div>
+            <strong>{{ project.hoverName }}</strong>
+            <div class="zoom-icon"></div>
           </div>
           {% else %}
             <div>
@@ -90,7 +106,7 @@
               <div class="zoom-icon"></div>
             </div>
             <div>
-              <strong>{{ project.hoverName }}</strong>
+              <span>{{ project.hoverName }}</span>
               <div class="zoom-icon"></div>
             </div>
           {% endif %}
@@ -114,18 +130,26 @@
           <div style="background-color:{{project.color}}; color:{{project.hover-color}};"
                onMouseOver="$(this).css({'background-color' : '{{project.hover-color}}', 'color' : '{{project.color}}'})"
                onmouseout="$(this).css({'background-color' : '{{project.color}}', 'color' : '{{project.hover-color}}'})">
-            <p><i class="fa {{project.animation-icon}}"></i> <span>{{project.name}}</span> </p>
+            <p><i class="fa {{project.animation-icon}}"></i> <strong>{{project.name}}</strong> </p>
           </div>
           {% elsif project.animation == 'figTile' %}
           <div>
             <figure>
-              <figcaption class="tile-caption caption-left">Slide-out Caption from left</figcaption>
+              <figcaption class="tile-caption caption-left"><strong>{{project.name}}</strong></figcaption>
             </figure>
           </div>
           {% elsif project.animation == 'rotate3dAnim' %}
           <div class="faces">
             <div class="front"><span class="fa {{project.animation-icon}}"></span></div>
-            <div class="back"><p>{{project.name}}</p></div>
+            <div class="back"><p><strong>{{project.name}}</strong></p></div>
+          </div>
+          {% elsif project.animation == 'awesome' %}
+          <div>
+            <div class="zoom-icon"></div>
+          </div>
+          <div>
+            <strong>{{ project.hoverName }}</strong>
+            <div class="zoom-icon"></div>
           </div>
           {% else %}
             <div>
@@ -133,7 +157,7 @@
               <div class="zoom-icon"></div>
             </div>
             <div>
-              <strong>{{ project.hoverName }}</strong>
+              <span>{{ project.hoverName }}</span>
               <div class="zoom-icon"></div>
             </div>
           {% endif %}

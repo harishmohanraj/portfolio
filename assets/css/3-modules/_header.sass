@@ -1,61 +1,67 @@
-header
-  background-image: url(/assets/images/#{$hero-path})
-  height: 750px
-  @extend %bg-pos
-  background-size: cover
+body
+  background-color: #000
+  font-family: 'Ubuntu', sans-serif
+  -webkit-font-smoothing: antialiased
 
-  .logo
-    +size(50px)
-    display: inline-block
-    float: left
-    margin: 30px
+  header
+    background-image: url(/assets/images/#{$hero-path})
+    height: 750px
+    @extend %bg-pos
+    background-size: cover
 
-    path
-      fill: rgba(0,0,0,0.7)
-  nav
-    display: inline-block
-    float: right
-    margin: 30px 40px 0px 0px
-
-    li
-      margin-left: 20px
+    .logo
+      +size(50px)
       display: inline-block
-      list-style-type: none
-      a
-        @extend %small-bold
-        color: rgba(0,0,0,0.7)
-        &:hover
-          color: rgba(0,0,0,1)
-  h1
-    font:
-      size: 72px
-      weight: 700
-    color: #fff
-    text-align: center
-    text-transform: uppercase
-    letter-spacing: 0.05em
-    margin-bottom: 20px
-    clear: both
-    padding-top: 100px
+      float: left
+      margin: 30px
 
-    span
-      display: inline-block
-      padding: 0.2em 0.5em
-      border: #fff solid 10px
-
-  .kicker
-    text-align: center
-    @extend %small-bold
-    letter-spacing: 0.05em
-    color: #fff
-    line-height: 1
-
-  .scroll-arrow
-    text-align: center
-    span
-      display: inline-block
-      +size(100px)
-      margin-top: 200px
-      transform: rotate(90deg)
       path
-        fill: rgba(255,255,255,1)
+        fill: rgba(0,0,0,0.7)
+    nav
+      display: inline-block
+      float: right
+      margin: 30px 40px 0px 0px
+
+      li
+        margin-left: 20px
+        display: inline-block
+        list-style-type: none
+        a
+          @extend %small-bold
+          color: rgba(0,0,0,0.7)
+          &:hover
+            color: rgba(0,0,0,1)
+    h1
+      font:
+        size: 72px
+        weight: 700
+      color: #fff
+      text-align: center
+      text-transform: uppercase
+      letter-spacing: 0.05em
+      margin-bottom: 20px
+      clear: both
+      padding-top: 180px
+      margin-top: 0px
+
+      span
+        display: inline-block
+        padding: 0.2em 0.5em
+        border: #fff solid 10px
+
+    .kicker
+      text-align: center
+      @extend %small-bold
+      letter-spacing: 0.05em
+      color: #fff
+      line-height: 1
+
+    .scroll-arrow
+      text-align: center
+      span
+        display: inline-block
+        +size(100px)
+        margin-top: 200px
+        transform: rotate(90deg)
+        path
+          fill: rgba(255,255,255,1)
