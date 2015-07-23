@@ -16,13 +16,24 @@ section.alt-section
         +size(200px)
         border-radius: 50%
         +order(3)
+        +transition()
+
+        &:hover
+          +transform(scale(1.2))
 
       [class^="icon"]
         +size(100px)
         background-color: $bg-color-new
         border-radius: 50%
-        path
-          fill: $skills-icon-color
+        +transition()
+
+        &:hover
+          +transform(scale(1.2))
+        svg
+          width: 100%
+          hwight: 100%
+          path
+            fill: $skills-icon-color
 
         &.icon-pencil
           +order(1)
@@ -32,6 +43,23 @@ section.alt-section
           +order(4)
         &.icon-video
           +order(5)
+
+    @media screen and (max-width:650px)
+      .face-lockup
+        display: block
+        text-align: center
+
+        div
+          display: inline-block
+
+        .face-img
+          display: block
+          background-position: center center
+          background-repeat: no-repeat
+          margin: 0 auto 30px
+
+        [class^="icon"]
+          margin: 10px
 
     .work-belt
       width: 200%

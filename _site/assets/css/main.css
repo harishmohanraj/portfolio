@@ -2285,7 +2285,6 @@ section.about {
   section.about .blurb {
     font-size: 24px;
     font-weight: 300;
-    padding: 10px;
     margin: 0px auto;
     padding: 80px 0px;
     text-align: center;
@@ -2381,14 +2380,35 @@ section.alt-section.section-work {
       -webkit-order: 3;
       -moz-order: 3;
       order: 3;
-      -ms-flex-order: 3; }
+      -ms-flex-order: 3;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      section.alt-section.section-work .face-lockup .face-img:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2); }
     section.alt-section.section-work .face-lockup [class^="icon"] {
       height: 100px;
       width: 100px;
       background-color: #e5eaee;
-      border-radius: 50%; }
-      section.alt-section.section-work .face-lockup [class^="icon"] path {
-        fill: #c99065; }
+      border-radius: 50%;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      section.alt-section.section-work .face-lockup [class^="icon"]:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2); }
+      section.alt-section.section-work .face-lockup [class^="icon"] svg {
+        width: 100%;
+        hwight: 100%; }
+        section.alt-section.section-work .face-lockup [class^="icon"] svg path {
+          fill: #c99065; }
       section.alt-section.section-work .face-lockup [class^="icon"].icon-pencil {
         -webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
@@ -2421,6 +2441,19 @@ section.alt-section.section-work {
         -moz-order: 5;
         order: 5;
         -ms-flex-order: 5; }
+  @media screen and (max-width: 650px) {
+    section.alt-section.section-work .face-lockup {
+      display: block;
+      text-align: center; }
+      section.alt-section.section-work .face-lockup div {
+        display: inline-block; }
+      section.alt-section.section-work .face-lockup .face-img {
+        display: block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin: 0 auto 30px; }
+      section.alt-section.section-work .face-lockup [class^="icon"] {
+        margin: 10px; } }
   section.alt-section.section-work .work-belt {
     width: 200%;
     position: relative;
@@ -2709,3 +2742,19 @@ section.alt-section.section-work {
           @media (max-width: 740px) {
             section.alt-section.section-work .work-belt .thumb-wrap .work-container .work-return, section.alt-section.section-work .work-belt .work-wrap .work-container .work-return {
               left: 0px; } }
+
+section.blockquote {
+  background-color: #F0EEEF; }
+  section.blockquote .blockquote-data {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0px auto;
+    padding: 100px 0px;
+    text-align: center;
+    max-width: 960px;
+    line-height: 60px; }
+    section.blockquote .blockquote-data p:last-child {
+      display: inline-block;
+      float: right; }
+      section.blockquote .blockquote-data p:last-child strong {
+        color: #BD5248; }

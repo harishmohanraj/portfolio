@@ -27,12 +27,13 @@ heroImg: hero-image.jpg
 secondHeroImg: second-hero.jpg
 avatar: pic.jpg
 blawblaw: <p>I am a <strong>creative problem-solver</strong>  with 4+ years experience working with a wide range of international clients & Web Development. It is a great feeling to work on projects to turn ideas into reality.</p>
+blockquote: <p>“The snake which cannot cast its skin has to die.”</p><p>- Friedrich Nietzsche</p>
 
 
 # Work section
 projects1:
 - {name: About Me,hoverName: 'Click to explore more', folder: 'proj-1', color: '#56D9C9', class: 'large', bg: 'false', animation: 'slideTextUp', animation-icon: ''}
-- {name: Educational background,hoverName: 'Click to explore more', folder: 'proj-2', color: '#455962', class: 'small-box', bg: 'false', animation: 'slideTextRight', animation-icon: 'fa-arrow-circle-right'}
+- {name: Mail Me,hoverName: 'Click to explore more', folder: 'proj-2', color: '#455962', class: 'small-box', bg: 'false', animation: 'slideTextRight', animation-icon: 'fa-arrow-circle-right'}
 - {name: '', folder: 'proj-3', color: '#F0514A', class: 'small-box last', bg: 'false', animation: 'glow', animation-icon: 'fa-linkedin-square', hover-color: '#fff'}
 - {name: Work Experience ,hoverName: 'Click to explore more', folder: 'proj-4', color: '#F0514A', class: 'large', bg: 'true', animation: 'figTile', animation-icon: ''}
 
