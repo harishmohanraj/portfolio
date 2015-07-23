@@ -116,7 +116,7 @@
         <div class="column">
           {% for project in site.data.portfolio.projects3 %}
           {% if project.bg == 'true' %}
-            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-image: url(/assets/images/work/{{project.folder}}/thumb.jpg);">
+            <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background-image: url(assets/images/work/{{project.folder}}/thumb.jpg);">
           {% elsif project.bg == 'false' %}
             <a class="thumb-unit {{project.class}} {{project.animation}}" data-folder = "{{project.folder}}" style="background: {{project.color}};">
           {% endif %}
