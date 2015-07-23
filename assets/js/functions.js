@@ -2,7 +2,21 @@ $(function(){
   smoothScroll(500);
   workBelt();
   workLoad();
+
+  $(window).scroll(function(){
+      var fromTop = $(window).scrollTop();
+      $('header .zoom > div').css({
+        top: '-'+fromTop+'px',
+        left: '-'+fromTop+'px',
+        right: '-'+fromTop+'px'
+      });
+      console.log(fromTop);
+  });
+
+
 });
+
+
 
 function workLoad(){
     //Instructing the broser for cache settings and cache it
