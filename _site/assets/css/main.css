@@ -2099,7 +2099,7 @@ body {
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: url(/assets/images/hero-image.jpg);
+      background-image: url(assets/images/hero-image.jpg);
       background-size: cover;
       -webkit-transition: all 150ms;
       -moz-transition: all 150ms;
