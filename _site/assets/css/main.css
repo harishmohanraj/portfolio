@@ -206,8 +206,8 @@ td, th {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("assets/css/1-tools/font-Awesome/fonts/fontawesome-webfont.eot?v=4.3.0");
-  src: url("assets/css/1-tools/font-Awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("assets/css/1-tools/font-Awesome/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("assets/css/1-tools/font-Awesome/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("assets/css/1-tools/font-Awesome/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("assets/css/1-tools/font-Awesome/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  src: url("1-tools/font-Awesome/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("1-tools/font-Awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("1-tools/font-Awesome/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("1-tools/font-Awesome/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("1-tools/font-Awesome/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("1-tools/font-Awesome/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -2473,7 +2473,7 @@ section.alt-section.section-work {
           @media screen and (max-width: 768px) {
             section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column {
               width: 99%;
-              margin: 1em auto; } }
+              margin: 0 auto; } }
           section.alt-section.section-work .work-belt .thumb-wrap .thumb-container .column .thumb-unit, section.alt-section.section-work .work-belt .work-wrap .thumb-container .column .thumb-unit {
             float: left;
             margin: 0 auto 1.7%;

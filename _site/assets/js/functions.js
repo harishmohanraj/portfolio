@@ -12,7 +12,6 @@ $(function(){
         left: '-'+fromTop+'px',
         right: '-'+fromTop+'px'
       });
-      console.log(fromTop);
   });
 
 
@@ -28,7 +27,7 @@ function workLoad(){
           newTitle = $this.find('strong:first-of-type').text(),
           newContent = $this.data('folder'),
           spinner = '<div class="loader">Loading...</div>',
-          newHTML = '/work/'+newContent+'.html';
+          newHTML = 'work/'+newContent+'.html';
       $('.project-load').html(spinner).load(newHTML);
       $('.project-title').text(newTitle);
     });
